@@ -1,0 +1,66 @@
+{
+  "n_images": 10000,
+  "equivalence": {
+    "n_images": 1000,
+    "elements_compared": 2048000,
+    "exact_match_pct": 100.0,
+    "within_1_lsb_pct": 100.0,
+    "correlation": 1.0,
+    "hw_range": [
+      0,
+      255
+    ]
+  },
+  "accuracy": {
+    "hw_system_pct": 70.29,
+    "per_class": {
+      "airplane": 79.2,
+      "automobile": 86.4,
+      "bird": 55.8,
+      "cat": 44.7,
+      "deer": 60.6,
+      "dog": 69.9,
+      "frog": 80.7,
+      "horse": 70.1,
+      "ship": 77.3,
+      "truck": 78.2
+    }
+  },
+  "latency_ms": {
+    "software_head_conv1_quant": 20.352,
+    "accelerator": 11.048,
+    "software_tail": 8.596,
+    "system_total": 39.997,
+    "software_middle_equivalent": 75.373,
+    "software_whole_network": 97.964,
+    "speedup_accelerator_same_layers": 6.82,
+    "speedup_system": 2.45
+  },
+  "throughput_ms_per_image": {
+    "accelerator": 8.15,
+    "system_total": 19.587,
+    "software_whole_network": 57.433,
+    "software_middle_equivalent": 51.155,
+    "theoretical_bound": 7.864,
+    "pipeline_efficiency_pct": 96.5,
+    "speedup_accelerator_same_layers": 6.28,
+    "speedup_system": 2.93
+  },
+  "compute": {
+    "macs_in_hardware": 5898240,
+    "macs_total": 6341888,
+    "hardware_share_pct": 93.0,
+    "amdahl_ceiling": 14.29,
+    "gops_at_throughput": 1.45
+  },
+  "resources": {
+    "LUT": 49816,
+    "LUT_pct": 93.6,
+    "FF": 43492,
+    "BRAM18": 29,
+    "BRAM18_pct": 10.4,
+    "DSP": 22,
+    "DSP_pct": 10.0
+  },
+  "clock_mhz": 50
+}
